@@ -130,3 +130,51 @@ body {
     background-position: top right 24px;
   }
   
+
+
+
+/* --- Responsive Grid --- */
+
+/* Tablets: 2-column layout */
+@media (max-width: 1024px) {
+    body {
+      background-color: hsl(200, 100%, 95%); /* Light blue background for tablets */
+    }
+  
+    .testimonial-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  
+    .daniel,
+    .patrick,
+    .card-dark-blue {
+      grid-column: span 2 !important;
+    }
+  
+    .kira {
+      grid-row: auto;
+      grid-column: span 2 !important;
+    }
+  }
+  
+  /* Phones: 1-column layout */
+  @media (max-width: 600px) {
+    body {
+      background-color: hsl(340, 100%, 95%); /* Light pink background for phones */
+    }
+  
+    .testimonial-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .daniel,
+    .jonathan,
+    .kira,
+    .jeanette,
+    .patrick,
+    .card-dark-blue {
+      grid-column: span 1 !important;
+    }
+  }
+  
+  
