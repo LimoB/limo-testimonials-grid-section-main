@@ -134,73 +134,35 @@ body {
 
 
 /* --- Responsive Grid --- */
-
 @media (max-width: 1024px) {
-    body {
-      background-color: hsl(200, 100%, 95%);
-    }
-  
-    .testimonial-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .daniel,
-    .patrick,
-    .card-dark-blue {
-      grid-column: span 2;
-    }
-  
-    .kira {
-      grid-row: auto;
-      grid-column: span 2;
-    }
-  }
-  
-  @media (max-width: 1024px) {
-    body {
-      background-color: hsl(200, 100%, 95%);
-    }
-  
-    .testimonial-grid {
-      grid-template-columns: repeat(2, 1fr);
-    }
-  
-    .daniel,
-    .patrick,
-    .card-dark-blue {
-      grid-column: span 2 ;
-    }
-  
-    .kira {
-      grid-row: auto;
-      grid-column: span 2;
-    }
+  body {
+    background-color: hsl(200, 100%, 95%);
   }
 
+  .testimonial-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  /* Make specific cards span 2 columns */
+  .daniel,
+  .patrick,
+  .kira, 
+  .jonathan,
+  .jeanette{
+    grid-column: span 3;
+  }
+}
+
+ 
 
   
 
   /* phone */
   
 
-  @media (max-width: 600px) {
-    body {
-      background-color: hsl(340, 100%, 95%);
-    }
-  
-    .testimonial-grid {
-      grid-template-columns: 1fr;
-    }
-  
-    .daniel,
-    .jonathan,
-    .kira,
-    .jeanette,
-    .patrick,
-    .card-dark-blue {
-      grid-column: span 1 !important;
-    }
-  }
+
   @media (max-width: 600px) {
     body {
       background-color: hsl(340, 100%, 95%);
