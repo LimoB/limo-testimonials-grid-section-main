@@ -143,16 +143,30 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+    /* align-items: stretch;
+
+    padding: 20px; */
   }
 
-  /* Make specific cards span 2 columns */
-  .daniel,
-  .patrick,
-  .kira, 
-  .jonathan,
-  .jeanette{
+
+  .patrick{
     grid-column: span 3;
   }
+
+  .daniel, 
+  .jonathan{
+    grid-row: span 2;
+    /* display: grid; */
+  
+  }
+
+  
+  .kira{
+        grid-row: span 2;
+
+  }
+
+  
 }
 
  
